@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:jerms_app_hackathon/dashboard/startNavigating/startNavigating.dart';
 
 void main() {
-  runApp(const MallInfo());
+  runApp(const StoreInfo());
 }
 
 
-class MallInfo extends StatelessWidget {
-  const MallInfo({super.key});
+class StoreInfo extends StatelessWidget {
+  const StoreInfo({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Mall Info'),
+        title: const Text('Store Info'),
       ),
       body: Center(
         child: ElevatedButton(
