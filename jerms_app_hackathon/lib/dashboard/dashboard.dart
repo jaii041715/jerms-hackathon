@@ -16,12 +16,8 @@ class Dashboard extends StatelessWidget {
         title: const Text('Dashboard123'),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.push(context,MaterialPageRoute(builder: (context) => const MyApp()));
-            // Navigate back to first route when tapped.
-          },
-          child: const Text('Go back!'),
+        child: Column(
+          children: <Widget>[],
         ),
       ),
     );
