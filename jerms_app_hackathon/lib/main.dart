@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dashboard/dashboard.dart';
+import 'getStarted/getStarted.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -25,11 +27,10 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.red,
       ),
-      home: const MyHomePage(title: 'JERMS Login Page'),
+      home: const getStarted(),
     );
   }
 }
-
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -114,8 +115,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.push(context,MaterialPageRoute(builder: (context) => const Dashboard()));
-          
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const Dashboard()));
         },
         tooltip: 'Increment',
         child: Text("Login"),
