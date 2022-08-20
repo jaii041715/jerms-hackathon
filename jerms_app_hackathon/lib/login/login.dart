@@ -5,25 +5,25 @@ void main() {
   runApp(const Login());
 }
 
-
 class Login extends StatelessWidget {
   const Login({super.key});
 
   @override
   Widget build(BuildContext context) {
+    Color _color = const Color(0xFFF7EB);
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('login'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.push(context,MaterialPageRoute(builder: (context) => const MyApp()));
-            // Navigate back to first route when tapped.
-          },
-          child: const Text('Go back!'),
-        ),
-      ),
-    );
+        backgroundColor: _color,
+        body: Container(
+          child: Column(children: <Widget>[
+            Container(
+              margin: const EdgeInsets.only(top: 250),
+              alignment: Alignment.topCenter,
+              child: Image.asset(
+                "assets/images/iWander - Official Logo.png",
+                height: 50,
+              ),
+            ),
+          ]),
+        ));
   }
 }
