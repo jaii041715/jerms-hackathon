@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jerms_app_hackathon/dashboard/startNavigating/navigateMallBluePrint/mapChangeView/mallMapView/mallMapView.dart';
+import 'package:jerms_app_hackathon/dashboard/dashboard.dart';
 
 void main() {
   runApp(const StartNavigating());
@@ -18,10 +18,10 @@ class StartNavigating extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Navigator.push(context,MaterialPageRoute(builder: (context) => const MallMapView()));
+            Navigator.push(context,MaterialPageRoute(builder: (context) => const Dashboard()));
             // Navigate back to first route when tapped.
           },
-          child: const Text('Go to Mall Map View'),
+          child: const Text('Go back!'),
         ),
       ),
     );
