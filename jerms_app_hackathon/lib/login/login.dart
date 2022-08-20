@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jerms_app_hackathon/main.dart';
 import 'package:jerms_app_hackathon/setLocation/setLocation.dart';
 
+
 void main() {
   runApp(const Login());
 }
@@ -55,7 +56,7 @@ class Login extends StatelessWidget {
                     MaterialPageRoute(
                         builder: (context) => const SetLocation()));
                 // Navigate back to first route when tapped.
-              },
+               },
               child: Container(
                 margin: EdgeInsets.fromLTRB(32, 0, 32, 5),
                 padding: EdgeInsets.all(10),
@@ -66,7 +67,7 @@ class Login extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(5)),
                 child: Center(
-                  child: Text("SIGN IN AS GUEST",
+                  child: Text("SIGN IN AS GUEST", 
                       style: TextStyle(
                           color: Color(0xFFBAA1945),
                           fontSize: 14,
