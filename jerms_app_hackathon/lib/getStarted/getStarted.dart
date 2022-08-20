@@ -35,7 +35,10 @@ class getStarted extends StatelessWidget {
                   margin: const EdgeInsets.only(top: 200),
                   child: Text(
                     "Get Your Directions Right.",
-                    style: TextStyle(fontSize: 26, fontFamily: 'Poppins Bold'),
+                    style: TextStyle(
+                        fontSize: 26,
+                        fontFamily: 'Poppins Bold',
+                        color: Color(0xFFB33140C)),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -43,8 +46,10 @@ class getStarted extends StatelessWidget {
                   margin: const EdgeInsets.fromLTRB(40, 0, 40, 10),
                   child: Text(
                     "Let us show you the best and shortest possible route to any store inside this mall.",
-                    style:
-                        TextStyle(fontSize: 18, fontFamily: 'Poppins Regular'),
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontFamily: 'Poppins Regular',
+                        color: Color(0xFFB33140C)),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -57,7 +62,7 @@ class getStarted extends StatelessWidget {
                   },
                   child: Container(
                     margin: EdgeInsets.fromLTRB(32, 0, 32, 50),
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(15),
                     width: double.infinity,
                     decoration: BoxDecoration(
                         color: Color(0xFFBAA1945),
