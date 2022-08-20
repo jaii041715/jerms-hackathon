@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dashboard/dashboard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,12 +23,13 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'JERMS Login Page'),
     );
   }
 }
+
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -49,6 +51,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  String _myName = "";
 
   void _incrementCounter() {
     setState(() {
@@ -58,6 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter++;
+      _myName = "";
     });
   }
 
@@ -99,16 +103,22 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             Text(
-              '$_counter',
+              '$_myName',
+              style: Theme.of(context).textTheme.headline4,
+            ),
+            TextField(
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: () {
+          Navigator.push(context,MaterialPageRoute(builder: (context) => const Dashboard()));
+          
+        },
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        child: Text("Login"),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
