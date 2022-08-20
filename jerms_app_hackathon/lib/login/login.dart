@@ -63,7 +63,7 @@ class Login extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(5)),
                 child: Center(
-                  child: Text("SIGN IN AS GUEST",
+                  child: Text("SIGN IN AS GUEST", 
                       style: TextStyle(
                           color: Color(0xFFBAA1945),
                           fontSize: 14,
