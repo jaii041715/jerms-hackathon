@@ -16,14 +16,7 @@ class Dashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Dashboard'),
-        leading: BackButton(
-          onPressed: () {
-            MaterialPageRoute(
-              builder: (context) => const Login()
-            );
-          },
-        )
+        title: const Text('Dashboard')
       ),
       body: Center(
         child: Column(

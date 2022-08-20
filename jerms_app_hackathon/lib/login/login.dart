@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jerms_app_hackathon/main.dart';
+import 'package:jerms_app_hackathon/dashboard/dashboard.dart';
 
 void main() {
   runApp(const Login());
@@ -47,11 +48,11 @@ class Login extends StatelessWidget {
             ),
             Container(
                 child: TextButton(
-              onPressed: () {
+                onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const Login()));
+                    MaterialPageRoute(builder: (context) => const Dashboard()));
                 // Navigate back to first route when tapped.
-              },
+               },
               child: Container(
                 margin: EdgeInsets.fromLTRB(32, 0, 32, 5),
                 padding: EdgeInsets.all(10),
@@ -67,17 +68,18 @@ class Login extends StatelessWidget {
                           color: Color(0xFFBAA1945),
                           fontSize: 14,
                           fontFamily: 'Poppins Medium',
-                          letterSpacing: 1.25)),
+                          letterSpacing: 1.25)
+                  ),
                 ),
               ),
             )),
             Container(
                 child: TextButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const Login()));
-                // Navigate back to first route when tapped.
-              },
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => const Dashboard()));
+                    // Navigate back to first route when tapped.
+                  },
               child: Container(
                 margin: EdgeInsets.fromLTRB(32, 0, 32, 0),
                 padding: EdgeInsets.all(10),
