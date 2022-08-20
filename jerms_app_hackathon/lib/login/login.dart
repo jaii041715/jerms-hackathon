@@ -68,7 +68,7 @@ class Login extends StatelessWidget {
                           color: Color(0xFFBAA1945),
                           fontSize: 14,
                           fontFamily: 'Poppins Medium',
-                          letterSpacing: 1.25) 
+                          letterSpacing: 1.25)  
                   ),
                 ),
               ),
