@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jerms_app_hackathon/main.dart';
+import 'package:jerms_app_hackathon/login/login.dart';
 
 void main() {
   runApp(const getStarted());
@@ -41,13 +42,19 @@ class getStarted extends StatelessWidget {
                 Container(
                   margin: const EdgeInsets.fromLTRB(40, 0, 40, 10),
                   child: Text(
-                    "Let us show you the best and shortest possible route to any store inside this venue.",
+                    "Let us show you the best and shortest possible route to any store inside this mall.",
                     style:
                         TextStyle(fontSize: 18, fontFamily: 'Poppins Regular'),
                     textAlign: TextAlign.center,
                   ),
                 ),
                 Container(
+                    child: TextButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => const Login()));
+                    // Navigate back to first route when tapped.
+                  },
                   child: Container(
                     margin: EdgeInsets.fromLTRB(32, 0, 32, 50),
                     padding: EdgeInsets.all(20),
@@ -64,7 +71,7 @@ class getStarted extends StatelessWidget {
                               letterSpacing: 2)),
                     ),
                   ),
-                )
+                ))
               ])),
     );
   }
